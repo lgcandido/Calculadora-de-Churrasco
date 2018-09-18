@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Churrasco</title>
+	<meta charset="utf-8">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css-reset.css"/>
+    <link rel='stylesheet' href='churras.css'/>
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,400italic,700' rel='stylesheet'>
+
+</head>
+<body>
+
+	<div class="background">
+       <p class="title">Calculadora de Churrasco</p>
+       <button id="button-run" class="button-run">Calcular</button>
+       <div id="steps" class="steps">
+
+          <div id="step-1" class="step-1">
+             <div class="qtd-meat">Quantidade de Carne Geral</div>
+             <button id="button-cal1" class="button-cal1">Calcular</button>
+
+             <div class="price-person"> Preço por Pessoa </div>
+             <button id="button-cal2" class="button-cal2">Calcular</button>
+         </div>
+
+         <div id="step-2" class="step-2">
+             <div class="qtd-male">Quantidade de Homens</div>
+             <p class="portion">(Porção de 400g)</p>
+             <input class="input-male" id="input-male" value="0" min="0" type="number"/> 
+
+             <div class="qtd-female">Quantidade de Mulheres</div>
+             <p class="portion">(Porção de 300g)</p>
+             <input class="input-female" id="input-female" value="0" min="0" type="number"/>  
+
+             <div class="qtd-children">Quantidade de Crianças</div>
+             <p class="portion">(Porção de 150g)</p>
+             <input class="input-children" id="input-children" value="0" min="0" type="number"/> 
+
+             <div class="title-meat">Tipos de Carnes</div>
+             <input class="box" id="check1" type="checkbox">
+             <label class="meats">Carne Bovina</label>
+             <br>
+             <input class="box" id="check2" type="checkbox"/> 
+             <label class="meats">Carne Suína</label>
+             <br>
+             <input class="box" id="check3" type="checkbox"/>
+             <label class="meats">Asa e Coxa de Frango</label>
+             <br>
+             <input class="box" id="check4" type="checkbox"/>
+             <label class="meats">Coração</label>
+             <br>
+             <input class="box" id="check5" type="checkbox"/>
+             <label class="meats"> Linguiça</label>
+             <br>
+             <input class="box" id="check6" type="checkbox"/>
+             <label class="meats"> Pão de Alho</label>
+             <br>
+             <button class="button-cal3" id="button-cal3"> Calcular </button>
+         </div>
+
+         <div id="step-2-1" class="step-2-1">
+            <span id="result" class="result"></span> 
+            <br>
+            <span id="qty-carne" class="qty-carne"></span>
+            <span id="mostrar-carnes1" class="mostrar-carnes"></span>
+            <span id="mostrar-carnes2" class="mostrar-carnes"></span>
+            <span id="mostrar-carnes3" class="mostrar-carnes"></span>
+            <span id="mostrar-carnes4" class="mostrar-carnes"></span>
+            <span id="mostrar-carnes5" class="mostrar-carnes"></span>
+            <span id="mostrar-carnes6" class="mostrar-carnes"></span>
+            <button class="run-step2" id="run-step2">Calcular Preços</button>
+        </div>
+
+        <div id="step-3" class="step-3">
+            <table>
+                <table style="undefined;table-layout: fixed; width: 100%">
+                    <colgroup>
+                    <col style="width: 42%">
+                    <col style="width: 32%">
+                    <col style="width: 28%">
+                </colgroup>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                </tr>
+                <tr>
+                    <td><input class="box-step3" id="check1-step3" type="checkbox">Carne Bovina (Picanha)</input></td>
+                    <td><input class="qty-item" id="qty-item1" type="number"></td>
+                    <td><label class="real1">R$</label><input class="price-item" id="price-item1" type="number" value="29.99" min="0"></td>
+                </tr>
+                <tr>
+                    <td><input class="box-step3" id="check2-step3" type="checkbox">Carne Suína (Lombo)</td>
+                    <td><input class="qty-item" id="qty-item2" type="number"></td>
+                    <td><label class="real2">R$</label><input class="price-item" id="price-item2" value="14.99" type="number" min="0"></td>
+                </tr>
+                <tr>
+                    <td><input class="box-step3" id="check3-step3" type="checkbox">Asa e Coxa de Galinha </td>
+                    <td><input class="qty-item" id="qty-item3" type="number"></td>
+                    <td><label class="real3">R$</label><input class="price-item" id="price-item3" value="9.99" type="number" min="0"></td>
+                </tr>
+                <tr>
+                    <td><input class="box-step3" id="check4-step3" type="checkbox">Coração</td>
+                    <td><input class="qty-item" id="qty-item4" type="number"></td>
+                    <td><label class="real4">R$</label><input class="price-item" id="price-item4" value="17.99" type="number" min="0"></td>
+                </tr>
+                <tr>
+                    <td><input class="box-step3" id="check5-step3" type="checkbox">Linguiça</td>
+                    <td><input class="qty-item" id="qty-item5" type="number"></td>
+                    <td><label class="real5">R$</label><input class="price-item" id="price-item5" value="14.99" type="number" min="0"></td>
+                </tr>
+                <tr>
+                    <td><input class="box-step3" id="check6-step3" type="checkbox">Pão de Alho</td>
+                    <td><input class="qty-item" id="qty-item6" type="number"></td>
+                    <td><label class="real6">R$</label><input class="price-item" id="price-item6" value="9.65" type="number" min="0"></td>
+                </tr>
+                <tr>
+                    <th class="subtitle-table">Outros Itens</th>
+                    <th class="subtitle-table">Quantidade</th>
+                    <th><button class="cal-itens-dif" id="cal-itens-dif">Calc./Pessoa</button></th>
+                </tr>
+                <tr>
+                    <td><input class="box-step3" id="check7-step3" type="checkbox">Refrigerante (ℓitro)</td>
+                    <td><input class="qty-item" id="qty-item7" type="number"></td>
+                    <td><label class="real7">R$</label><input class="price-item" id="price-item7" type="number" value="2.80" min="0" type="number" min="0"></td>
+                </tr>
+                <tr>
+                    <td><input class="box-step3" id="check8-step3" type="checkbox">Cerveja (latão)</td>
+                    <td><input class="qty-item" id="qty-item8" type="number"></td>
+                    <td><label class="real8">R$</label><input class="price-item" id="price-item8" type="number" value="2.66" min="0" type="number" min="0"></td>
+                </tr>
+                <tr>
+                    <td><input class="box-step3" id="check9-step3" type="checkbox">Copo Descartável (pc.)</td>
+                    <td><input class="qty-item" id="qty-item9" type="number"></td>
+                    <td><label class="real9">R$</label><input class="price-item" id="price-item9" type="number" value="4.88" min="0" type="number" min="0"></td>
+                </tr>
+                <tr>
+                    <td><input class="box-step3" id="check10-step3" type="checkbox">Guardanapo (pc.)</td>
+                    <td><input class="qty-item" id="qty-item10" type="number"></td>
+                    <td><label class="real10">R$</label><input class="price-item" id="price-item10" type="number" value="2.99" min="0" type="number" min="0"></td>
+                </tr> 
+                <tr>
+                    <td><input class="box-step3" id="check11-step3" type="checkbox">Carvão (pc.)</td>
+                    <td><input class="qty-item" id="qty-item11" type="number"></td>
+                    <td><label class="real11">R$</label><input class="price-item" id="price-item11" type="number" value="7.49" min="0" type="number" min="0"></td>
+                </tr>                                        
+            </table>
+            <button class="run-step3" id="run-step3">Calcular</button>
+        </div>
+        <div class="step-3-1" id="step-3-1">
+            <span id="result-price" class="result-price"></span>
+            <table>
+            <table style="undefined;table-layout: fixed; width: 45%">
+                  <colgroup>
+                  <col style="width: 35%">
+                  <col style="width: 15%">
+              </colgroup>
+              <tr>
+                <td><span class="price-total-text" id="item-step3-1"></span></td>
+                <td><span id="price-total1" class="price-total"></span></td>
+            </tr>
+            <tr>
+                <td><span class="price-total-text" id="item-step3-2"></span></td>
+                <td><span id="price-total2" class="price-total"></span></td>
+            </tr>
+            <tr>
+                <td><span class="price-total-text" id="item-step3-3"></span></td>
+                <td><span id="price-total3" class="price-total"></span></td>
+            </tr>
+            <tr>
+                <td><span class="price-total-text" id="item-step3-4"></span></td>
+                <td><span id="price-total4" class="price-total"></span></td>
+            </tr>
+            <tr>
+                <td><span class="price-total-text" id="item-step3-5"></span></td>
+                <td><span id="price-total5" class="price-total"></span></td>
+            </tr>
+            <tr>
+                <td><span class="price-total-text" id="item-step3-6"></span></td>
+                <td><span id="price-total6" class="price-total"></span></td>
+            </tr>
+            <tr>
+                <td><span class="price-total-text" id="item-step3-7"></span></td>
+                <td><span id="price-total7" class="price-total"></span></td>
+            </tr>
+            <tr>
+                <td><span class="price-total-text" id="item-step3-8"></span></td>
+                <td><span id="price-total8" class="price-total"></span></td>
+            </tr>
+            <tr>
+             <td><span class="price-total-text" id="item-step3-9"></span></td>
+             <td><span id="price-total9" class="price-total"></span></td>
+         </tr>
+         <tr>
+            <td><span class="price-total-text" id="item-step3-10"></span> </td>
+            <td><span id="price-total10" class="price-total"></span></td>
+        </tr>
+        <tr>
+            <td><span class="price-total-text" id="item-step3-11"></span></td>
+            <td><span id="price-total11" class="price-total"></span></td>
+        </tr>
+        <tr>
+            <td><span id="total-text" class="price-total"></span></td>
+            <td><span id="total" class="price-total"></span></td>
+        </table>
+    </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>	
+<script src="churras.js"></script>
+
+</body>
+</html>

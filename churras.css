@@ -1,0 +1,319 @@
+.background {
+
+	background-image: url("http://www.vancosty.com.br/wp-content/uploads/2015/05/churrasco-picanha-vale.jpg");
+	background-repeat: no-repeat;
+	color: white;
+	font-family: Open Sans;
+	font-size: 60px;
+
+	position: absolute; 
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-size: cover;
+	background-position: center center;
+}
+
+.title {
+	text-align: center;
+	margin-top: 10%;
+	text-shadow: black 4px 4px 4px;
+
+}
+
+.button-run {
+
+	font-size: 23px;
+	border-radius: 3px; 
+	margin-left: 47%;
+}
+
+.steps {
+
+	display:none;
+	width:20%;
+	height:40%;
+	background: linear-gradient(to bottom, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%);
+	position:absolute;
+	z-index:100;
+	top:40%;
+	left:39.5%;
+	border-radius: 12px;
+	border: solid gray 2px;
+	-webkit-box-shadow: 4px 4px 13px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 4px 4px 13px 0px rgba(50, 50, 50, 0.75);
+	box-shadow: 4px 4px 13px 0px rgba(50, 50, 50, 0.75);
+}
+
+.step-1 {
+
+	font-size: 26px;
+	color: black;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+
+}
+
+.qtd-meat {
+
+	position: relative;
+	top: 15%;
+}
+
+.button-cal1 {
+
+	position: relative;
+	margin-top: 20%;
+	border-radius: 3px; 
+	font-size: 18px;
+}
+
+
+.price-person {
+
+	position: relative;
+	top: 25%;
+
+}
+
+.button-cal2 {
+
+	position: relative;
+	margin-top: 30%;
+	border-radius: 3px; 
+	font-size: 18px;
+
+}
+
+.step-2 {
+
+	font-size: 20px;
+	color: black;
+
+}
+
+.portion {
+
+	font-size: 13px;
+	text-align: center;
+
+}
+
+.qtd-male {
+	font-size: 18px;
+	text-align: center;
+	margin-top: 2%;
+
+}
+
+.qtd-female {
+	font-size: 18px;
+	text-align: center;
+	margin-top: 3%;
+}
+
+.qtd-children{
+	font-size: 18px;
+	text-align: center;
+	margin-top: 3%;
+}
+
+.input-male {
+
+	margin-left: 43%;
+	width: 50px;	
+}
+
+.input-female {
+
+	margin-left: 43%;
+	width: 50px;	
+}
+
+.input-children {
+
+	margin-left: 43%;
+	width: 50px;	
+}
+
+.title-meat {
+
+	font-weight: bold;
+	margin-top: 4%;
+	margin-left: 5%;
+	color: #AC4200;
+	text-shadow: #cccccc 3px 3px 3px;
+}
+
+
+.box{
+
+	margin-left: 3%;
+	margin-top: 2%
+}
+
+.meats { 
+
+	position: absolute;
+	margin-top: 2.3%;
+	font-size: 13px;
+}
+
+.button-cal3 {
+
+	position: absolute;
+	font-size: 18px;
+	margin-left: 65%;
+	bottom: 20%;
+
+}
+
+.result {
+
+	position: absolute;
+	font-size: 15px;
+	color: black;
+	margin-left: 5%;
+	top: 3%;
+}	
+
+.qty-carne {
+
+	font-size: 12px;
+	color: black;
+	font-weight: bold;
+	position: absolute;
+	top: 10%;
+	margin-left: 28%;
+}
+
+.mostrar-carnes {
+
+	display: block;
+	font-size: 18px;
+	color: black;
+	position: relative;
+	margin-left: 3%;
+	margin-top: 3%;
+}
+
+
+.run-step2 {
+
+	position: absolute;
+	font-size: 18px;
+	margin-left: 30%;
+	;
+
+}
+
+.box-step3{
+
+	margin-left: 3%;
+	margin-top: 5.5%;
+}
+
+.meats2 { 
+
+	position: absolute;
+	margin-top: 2.3%;
+	color: black;
+}
+
+.step-3 {
+
+	font-size: 13px;
+	color: black;
+	position: absolute;
+	top: 5%;
+	bottom: 0;
+	width: 100%;
+}
+
+.price-item {
+
+	width: 50% ;
+	text-align: center;
+	margin-left: 3%;
+
+
+}
+
+.qty-item {
+
+	text-align: center;
+	width: 40% ;
+	margin-left: 25%;
+}
+
+.subtitle-table {
+	font-weight: bold;
+	padding-top: 5%;
+}
+
+.run-step3 {
+
+	position: absolute;
+	margin-left: 40%;
+	font-size: 16px;
+	margin-top: 1%;
+}
+
+
+.result-price {
+
+	position: absolute;
+	font-size: 16px;
+	font-weight: bold;	
+	color: black;
+	margin-left: 7%;
+	margin-top: 4%;
+
+}
+
+.price-total {
+
+	position: relative;
+	display: block;
+	font-size: 15px;
+	top: 40px;
+	margin-top: 1%;
+	margin-left: 0%;
+	color: #33CC00;
+	text-align: justify;
+
+}
+
+.price-total-text {
+
+	position: relative;
+	display: block;
+	font-size: 15px;
+	top: 40px;
+	margin-top: 1%;
+	margin-left: 4%;
+	color: black;
+	text-align: justify;
+}
+
+#total-text {
+	border-top-color:black;
+	border-width: 1px 0 0 0;
+	border-style:solid;
+	margin-left: 4%;
+	color: black;
+	text-align: justify;
+}
+
+ #total {
+
+	border-color:black;
+	border-width: 1px 0 0 0;
+	border-style:solid;
+	color: red;
+	text-align: justify;
+
+}
